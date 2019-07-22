@@ -1,0 +1,56 @@
+.sidebar {position:fixed;top:54px;left:0;bottom:0;width:240px;border-right:1px solid rgba(0,0,0,0.15);z-index: 10;
+padding:20px 10px; }
+
+
+.sidebar ul {
+	list-style: none;
+	float:none;
+	padding:0;margin:0
+}
+.sidebar ul li {
+	display: block;
+	cursor:pointer;
+	padding:5px;
+	float:left;
+	border-bottom:1px solid rgba(0,0,0,0.15);
+	width:100%
+}
+
+.infos-etud{
+	position: fixed;
+	top:56px;
+	right:-100vw;
+	bottom: 0;
+	left:100%;
+	background-color: #e6ee9c;
+}
+
+.infos-etud.afficher {
+	right:0;
+	left:240px;
+}
+.infos-etud {
+	transition: all 0.9s ease;
+}
+
+.infos-etud.alerte {
+	background: #ef9a9a;
+}
+.infos-etud.success {
+	background: #e6ee9c;
+}
+
+
+.mois {
+	display: block;
+	height: auto;
+	min-height: 100px;
+}
+.mois .jr {
+	display: inline-block;
+	width:14%;float: left;
+	background: blue;height:20px;line-height: 20px;text-align: center;
+	border:1px solid rgba(255,255,255,0.5)
+}
+.mois .jr.rouge {background: #e57373;color:black}
+.mois .jr.vert {background: #aed581;color:black}
